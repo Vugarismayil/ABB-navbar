@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>ABB</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bgnav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link fs-7" href="#">Tender elanları</a>
+                    <a class="nav-link fs-7" href="#">Haqqımızda</a>
+                    <a class="nav-link fs-7" href="#">Tariflər və Standart şərtlər</a>
+                    <a class="nav-link fs-7" href="#">Xəbərlər</a>
+                    <a class="nav-link fs-7" href="#">Xidmət şəbəkəsi</a>
+                    <a class="nav-link fs-7" href="#">Onlayn xidmətlər</a>
+                    <a href="" class="btn btn-primary portal">Karyera portalı</a>
+                    <button class="search-button" onclick="toggleSearchBox()">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" />
+                        <span>Axtarış</span>
+                    </button>
+                    <div class="search-box">
+                        <input class="searchinp" type="text" placeholder="Sizə necə kömək edə bilərik?" />
+                    </div>
+                </div>
+                <div class="language-selector">
+                    <div class="current-language">
+                      <span id="language">AZ</span>
+                      <button class="lang-icon-down" id="arrow" onclick="toggleMenu()">&#60;</button>
+                    </div>
+                    <ul id="language-menu" class="hidden" data-id="lang-other">
+                      <li onclick="changeLanguage('AZ')">AZ</li>
+                      <li onclick="changeLanguage('EN')">EN</li>
+                      <li onclick="changeLanguage('RU')">RU</li>
+                    </ul>
+                  </div>
+            </div>
+            <p class="tel"><i class="fa-solid fa-phone"></i><a href="tel:937">937</a></p>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>
